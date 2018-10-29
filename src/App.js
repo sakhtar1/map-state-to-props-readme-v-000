@@ -23,7 +23,8 @@ class App extends Component {
 };
 
 const mapStateToProps = (state) => {
-  return { items: state.items };
+  return { items: state.items },
+  return { userCount: state.userCount },
 };
-
+ 
 export default connect(mapStateToProps)(App);
